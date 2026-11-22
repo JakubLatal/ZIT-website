@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOJE KÁRY</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Hlavní navigace">
+      <a class="logo" href="index.html">MOJE<span>KÁRY</span></a>
+      <button class="menu-toggle" aria-label="Otevřít navigaci" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a class="active" href="index.html">Domů</a></li>
+        <li><a href="auta.html">Automobily</a></li>
+        <li><a href="#o-webu">O webu</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">VÍTEJTE VE SVĚTĚ AUTOMOBILŮ</p>
+        <h1>VÁŠ SVĚT<br><span>VAŠE KÁRA</span></h1>
+        <p class="hero-text">Objevte zajímavé automobily, slavné značky a stroje, které posouvají hranice rychlosti i designu.</p>
+        <a class="button button-primary" href="auta.html">Prohlédnout automobily <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section class="section container" id="o-webu">
+      <div class="section-heading">
+        <p class="eyebrow">O NÁS</p>
+        <h2>VÍCE NEŽ JEN <span>KÁRY</span></h2>
+        <p class="section-intro">Automobily spojují techniku, design a emoce. Na tomto webu najdete výběr zajímavých vozů různých značek a kategorií.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon">◈</div>
+          <h3>Design</h3>
+          <p>Od elegantních linií až po agresivní sportovní vzhled. Každá kára má svůj osobitý styl.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">↗</div>
+          <h3>Výkon</h3>
+          <p>Výkon motoru, zrychlení a maximální rychlost patří mezi vlastnosti, které zákazníky zajímají.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">◎</div>
+          <h3>Technologie</h3>
+          <p>Moderní auta využívají chytré systémy, bezpečnostní asistenty a nové druhy pohonu.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-heading heading-row">
+          <div>
+            <h2>VÝBĚR <span>MODELŮ</span></h2>
+          </div>
+          <a class="text-link" href="auta.html">Všechny automobily →</a>
+        </div>
+        <div class="car-grid home-cars">
+          <article class="car-card">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=85" alt="Sportovní Porsche na silnici">
+            <div class="car-info"><span class="car-tag">SPORTOVNÍ</span><h3>Porsche 911</h3><p>Ikona sportovních automobilů s nezaměnitelným designem.</p></div>
+          </article>
+          <article class="car-card">
+            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=85" alt="Černé BMW">
+            <div class="car-info"><span class="car-tag">LUXUSNÍ</span><h3>BMW řady 5</h3><p>Spojení komfortu, technologií a radosti z jízdy.</p></div>
+          </article>
+          <article class="car-card">
+            <img src="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=1000&q=85" alt="Červený sportovní automobil">
+            <div class="car-info"><span class="car-tag">SUPERCAR</span><h3>Lamborghini Huracan</h3><p>Italská legenda známá emocemi, zvukem a rychlostí.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container contact-section" id="kontakt">
+      <div class="contact-copy">
+        <p class="eyebrow">NAPIŠTE NÁM</p>
+        <h2>MÁTE DOTAZ?<br><span>OZVĚTE SE</span></h2>
+        <p>Máte tip na zajímavý automobil nebo nám chcete něco sdělit? Vyplňte jednoduchý formulář.</p>
+      </div>
+      <form class="contact-form" id="contact-form" novalidate>
+        <label for="name">Jméno</label>
+        <input type="text" id="name" name="name" placeholder="Vaše jméno" required>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="vas@email.cz" required>
+        <label for="message">Zpráva</label>
+        <textarea id="message" name="message" rows="4" placeholder="Napište nám..." required></textarea>
+        <button class="button button-primary" type="submit">Odeslat zprávu →</button>
+        <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="logo" href="index.html">MOJE<span>KÁRY</span></a>
+      <p>Made by: Jakub Látal</p>
+      <p>© <span class="current-year"></span> MOJE KÁRY</p>
+    </div>
+  </footer>
+</body>
+</html>

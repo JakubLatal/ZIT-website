@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galerie automobilů AUTO WORLD.">
+  <title>AUTO WORLD | Automobily</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Hlavní navigace">
+      <a class="logo" href="index.html">MOJE<span>KÁRY</span></a>
+      <button class="menu-toggle" aria-label="Otevřít navigaci" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Domů</a></li>
+        <li><a class="active" href="auta.html">Automobily</a></li>
+        <li><a href="index.html#o-webu">O webu</a></li>
+        <li><a href="index.html#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <p class="eyebrow">GALERIE AUTOMOBILŮ</p>
+        <h1>NAJDĚTE VÁŠ <span>VYSNĚNÝ VŮZ</span></h1>
+        <p>Prohlédněte si výběr známých automobilových značek a modelů.</p>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="catalog-tools">
+        <div class="search-wrap">
+          <label class="visually-hidden" for="car-search">Vyhledat automobil</label>
+          <input type="search" id="car-search" placeholder="Vyhledat značku nebo model...">
+        </div>
+        <div class="filters" aria-label="Filtrovat automobily">
+          <button class="filter-button active" data-filter="all">Všechny</button>
+          <button class="filter-button" data-filter="sport">Sportovní</button>
+          <button class="filter-button" data-filter="luxury">Luxusní</button>
+          <button class="filter-button" data-filter="electric">Elektrické</button>
+        </div>
+      </div>
+
+      <p class="results-count" id="results-count" aria-live="polite"></p>
+
+      <div class="car-grid catalog-grid" id="car-grid">
+        <article class="car-card catalog-card" data-category="sport" data-name="porsche 911">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=85" alt="Porsche 911">
+          <div class="car-info"><span class="car-tag">SPORTOVNÍ</span><h2>Porsche 911</h2><p>Německý sportovní vůz, který je známý svým charakteristickým vzhledem a jízdními vlastnostmi.</p></div>
+        </article>
+        <article class="car-card catalog-card" data-category="luxury" data-name="bmw m5">
+          <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=85" alt="BMW">
+          <div class="car-info"><span class="car-tag">LUXUSNÍ</span><h2>BMW M5</h2><p>Výkonný sedan kombinující sportovní charakter s pohodlím pro každodenní jízdu.</p></div>
+        </article>
+        <article class="car-card catalog-card" data-category="sport" data-name="lamborghini huracan">
+          <img src="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=1000&q=85" alt="Bílé sportovní Lamborghini">
+          <div class="car-info"><span class="car-tag">SPORTOVNÍ</span><h2>Lamborghini Huracan</h2><p>Italský sportovní automobil s výrazným designem a důrazem na výkon.</p></div>
+        </article>
+        <article class="car-card catalog-card" data-category="luxury" data-name="mercedes benz">
+          <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=85" alt="Luxusní Mercedes-Benz">
+          <div class="car-info"><span class="car-tag">LUXUSNÍ</span><h2>Mercedes-Benz</h2><p>Automobilová značka proslulá komfortem, bezpečností a elegantním stylem.</p></div>
+        </article>
+        <article class="car-card catalog-card" data-category="electric" data-name="tesla model s">
+          <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=1000&q=85" alt="Elektromobil Tesla">
+          <div class="car-info"><span class="car-tag">ELEKTRICKÉ</span><h2>Tesla Model S</h2><p>Elektromobil s moderními technologiemi a důrazem na dojezd a dynamiku.</p></div>
+        </article>
+        <article class="car-card catalog-card" data-category="sport" data-name="audi r8">
+          <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?auto=format&fit=crop&w=1000&q=85" alt="Sportovní Audi">
+          <div class="car-info"><span class="car-tag">SPORTOVNÍ</span><h2>Audi R8</h2><p>Sportovní model značky Audi, který spojuje výrazný vzhled a vysoký výkon.</p></div>
+        </article>
+      </div>
+      <p class="no-results" id="no-results" hidden>Žádný automobil neodpovídá zadanému hledání.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="logo" href="index.html">MOJE<span>KÁRY</span></a>
+      <p>Made by: Jakub Látal</p>
+      <p>© <span class="current-year"></span> MOJE KÁRY</p>
+    </div>
+  </footer>
+</body>
+</html>
